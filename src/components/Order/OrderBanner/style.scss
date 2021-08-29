@@ -1,0 +1,33 @@
+@import "../../../styles/variable.scss";
+
+.order-banner {
+  position: relative;
+  width: 100%;
+
+  & > img {
+    width: 100%;
+  }
+
+  & > div {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding: 0 15%;
+    font-family: pytagoras;
+    color: $white;
+    font-size: 35px;
+    letter-spacing: 2px;
+    background-color: rgba(223, 48, 77, 0.8);
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .order-banner {
+    & > img {
+      width: auto;
+      height: 96px;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+@import "../../styles/variable.scss";
+
+.font-button {
+  width: 32px;
+  height: 32px;
+  justify-content: center;
+  align-items: center;
+
+  &-wrapper {
+    border-radius: 50%;
+    overflow: hidden;
+  }
+}

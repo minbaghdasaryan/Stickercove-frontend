@@ -1,0 +1,23 @@
+@import "../../../styles/variable.scss";
+
+.order-ad-item {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+
+  & > img {
+    width: 40%;
+    max-width: 120px;
+  }
+
+  &-title {
+    text-align: center;
+    font-family: pytagoras;
+    margin: 16px 0;
+  }
+
+  &-comment {
+    font-size: 15px;
+    text-align: center;
+  }
+}

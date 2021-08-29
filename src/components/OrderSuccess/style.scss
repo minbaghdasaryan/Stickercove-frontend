@@ -1,0 +1,28 @@
+@import "../../styles/variable.scss";
+
+.order-success {
+  width: 100%;
+  height: 100%;
+  padding: 64px 15%;
+  color: $blue;
+  font-size: 35px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: pytagoras;
+
+  & > div {
+    font-size: 16px;
+    color: $black-light;
+    margin: 32px 0;
+    cursor: pointer;
+
+    &:hover {
+      color: $blue;
+    }
+
+    &:active {
+      color: $blue-darker;
+    }
+  }
+}

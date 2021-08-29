@@ -1,0 +1,51 @@
+@import "../../../styles/variable.scss";
+
+.order-video {
+  width: 100%;
+  padding: 64px 15%;
+  gap: 64px;
+
+  &-thumb {
+    width: 100%;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+
+    & > img {
+      width: 100%;
+    }
+
+    &-button {
+      position: absolute;
+      justify-content: center;
+
+      & > img {
+        width: 80%;
+        border-radius: 50%;
+        padding: 2px;
+        margin: -2px;
+        background-color: $white;
+      }
+    }
+  }
+
+  &-comment {
+    width: 100%;
+
+    &-title {
+      font-size: 26px;
+      font-family: pytagoras;
+      margin: 16px 0;
+    }
+
+    &-content {
+      font-size: 14px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .order-video {
+    flex-direction: column !important;
+  }
+}

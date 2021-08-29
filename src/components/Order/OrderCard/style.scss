@@ -1,0 +1,11 @@
+@import "../../../styles/variable.scss";
+
+.order-card {
+  width: fit-content;
+  transition: 0.3s;
+  border-radius: 16px;
+
+  &:hover {
+    box-shadow: 0 0 16px 2px rgba($color: $black, $alpha: 0.1);
+  }
+}

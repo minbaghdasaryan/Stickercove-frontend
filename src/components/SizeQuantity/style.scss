@@ -1,0 +1,181 @@
+@import "../../styles/variable.scss";
+
+.size-quantity {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 64px 15%;
+  background-color: $white-blue;
+
+  &-card {
+    width: 100%;
+    border-radius: 16px;
+    background-color: $white;
+    overflow: hidden;
+
+    &-next {
+      margin: 64px;
+      padding: 16px 36px;
+      font-size: 20px;
+      color: $white !important;
+      background-color: $blue;
+      cursor: pointer;
+      align-items: center;
+      border-radius: 16px;
+
+      & > svg {
+        margin-left: 16px;
+      }
+
+      &:hover {
+        background-color: $blue-darker;
+      }
+
+      &:active {
+        background-color: $blue;
+      }
+    }
+
+    &-title {
+      width: 240px;
+      padding: 64px;
+      background-color: $blue;
+      align-items: center;
+      justify-content: center;
+
+      & > p {
+        color: $white;
+        white-space: pre-wrap;
+        font-size: 35px;
+        font-family: pytagoras;
+        margin: 0 0 36px;
+      }
+
+      & > div {
+        color: $white;
+        text-align: center;
+      }
+    }
+
+    &-select {
+      width: 100%;
+      padding: 64px 0;
+
+      &-size {
+        flex: 1;
+        align-items: center;
+        padding: 0 16px;
+
+        &-custom {
+          width: 100%;
+          align-items: center;
+
+          &-wrap {
+            width: 100%;
+            gap: 8px;
+            justify-content: center;
+
+            & > input[type="number"] {
+              width: 80px;
+              padding: 4px 8px;
+              outline: 0;
+              border: 0;
+              border-bottom: 1px solid transparent;
+              transition: 0.3s;
+
+              &:focus {
+                border-bottom: 1px solid $blue;
+              }
+            }
+          }
+        }
+
+        &-popular {
+          &-item {
+            align-items: center;
+          }
+        }
+      }
+
+      &-quantity {
+        flex: 1;
+        align-items: center;
+
+        &-custom {
+          width: 100%;
+          align-items: center;
+
+          & > input[type="number"] {
+            padding: 4px 8px;
+            outline: 0;
+            border: 0;
+            border-bottom: 1px solid transparent;
+            transition: 0.3s;
+
+            &:focus {
+              border-bottom: 1px solid $blue;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &-title {
+    color: $blue;
+    letter-spacing: 1px;
+    font-size: 18px;
+    font-family: pytagoras;
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .size-quantity {
+    padding: 64px 10%;
+
+    &-card {
+      &-select {
+        flex-direction: column !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .size-quantity {
+    padding: 32px;
+
+    &-card {
+      flex-direction: column !important;
+
+      &-title {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .size-quantity {
+    padding: 8px;
+
+    &-card {
+      flex-direction: column !important;
+
+      &-title {
+        width: 100%;
+        padding: 32px;
+      }
+
+      &-select {
+        padding: 16px 0;
+      }
+
+      &-next {
+        margin: 32px 0 16px;
+      }
+    }
+  }
+}

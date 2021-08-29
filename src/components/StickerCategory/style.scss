@@ -1,0 +1,73 @@
+@import "../../styles/variable.scss";
+
+.sticker-category {
+  padding: 32px;
+  align-items: center;
+
+  & > div {
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &-image {
+    max-width: 300px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+
+    &-type {
+      width: 70%;
+      position: absolute;
+    }
+
+    &-bg {
+      width: 100%;
+    }
+  }
+
+  &-title {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    justify-content: center;
+
+    & > img {
+      position: absolute;
+      width: 115%;
+      height: 100%;
+
+      z-index: 1;
+    }
+
+    & > span {
+      z-index: 2;
+      color: $white;
+      font-family: pytagoras;
+      font-size: 20px;
+      letter-spacing: 2px;
+      align-items: center;
+      white-space: nowrap;
+    }
+  }
+
+  &-comment {
+    width: 100%;
+    max-width: 332px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 300;
+  }
+}
+
+@media (max-width: 1024px) {
+  .sticker-category {
+    min-width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .sticker-category {
+    min-width: 100%;
+  }
+}

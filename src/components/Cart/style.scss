@@ -1,0 +1,160 @@
+@import "../../styles/variable.scss";
+
+.cart {
+  width: 100%;
+  height: 100%;
+  font-size: 35px;
+  font-family: pytagoras;
+  padding: 64px 15%;
+
+  &-wrap {
+    width: 100%;
+    margin-top: 32px;
+    gap: 16px;
+  }
+
+  &-order-list {
+    width: 100%;
+
+    & > div {
+      &:first-child {
+        border-radius: 16px 16px 0 0;
+      }
+
+      &:last-child {
+        border-radius: 0 0 16px 16px;
+      }
+    }
+
+    &-empty {
+      width: 100%;
+      border: 1px solid rgba($color: $blue, $alpha: 0.2);
+      color: $red;
+      background-color: rgba($color: $red, $alpha: 0.2);
+      font-size: 16px;
+      align-items: center;
+      justify-content: center;
+      padding: 8px 24px;
+    }
+
+    &-item {
+      width: 100%;
+      height: 88px;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px;
+      cursor: pointer;
+      background-color: $white-blue;
+
+      &:hover {
+        & > svg {
+          opacity: 1;
+        }
+      }
+
+      & > img {
+        font-size: 16px;
+        width: 80px;
+        padding-right: 8px;
+      }
+
+      &-type {
+        font-size: 16px;
+        margin-right: 8px;
+      }
+
+      &-quantity {
+        font-size: 16px;
+        margin-right: 8px;
+      }
+
+      &-total {
+        font-size: 16px;
+        margin-right: 8px;
+      }
+
+      & > svg {
+        color: $blue;
+        font-size: 24px;
+        opacity: 0;
+        transition: 0.3s;
+      }
+    }
+  }
+
+  &-checkout {
+    font-size: 14px;
+
+    & > div {
+      padding: 32px;
+      border-radius: 16px;
+      align-items: center;
+      background-color: $white-blue;
+    }
+
+    &-total {
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    &-button {
+      cursor: pointer;
+      width: 100%;
+      color: $white;
+      background-color: $blue;
+      font-size: 20px;
+      padding: 24px 36px;
+      margin: 16px 0;
+      align-items: center;
+      justify-content: center;
+      border-radius: 16px;
+
+      & > svg {
+        margin-left: 16px;
+        font-size: 24px;
+      }
+
+      &:hover {
+        background-color: $blue-darker;
+      }
+
+      &:active {
+        background-color: $blue;
+      }
+    }
+
+    & > span {
+      color: $blue;
+      cursor: pointer !important;
+      font-weight: 500;
+
+      &:hover {
+        color: $blue-darker;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .cart {
+    padding: 64px 10%;
+
+    &-wrap {
+      flex-direction: column !important;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .cart {
+    font-size: 28px;
+    padding: 32px;
+  }
+}
+
+@media (max-width: 650px) {
+  .cart {
+    font-size: 24px;
+    padding: 32px 8px;
+  }
+}

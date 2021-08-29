@@ -1,0 +1,48 @@
+@import "../../../styles/variable.scss";
+
+.main-process {
+  width: 100%;
+  background-image: url("../../../resources/images/process/main-process-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 64px 8px;
+
+  & > p {
+    width: 100%;
+    text-align: center;
+    margin: 16px 0 24px;
+    letter-spacing: 2px;
+    font-family: pytagoras;
+    font-size: 35px;
+    font-weight: lighter;
+  }
+
+  &-order {
+    width: 100%;
+    justify-content: center;
+
+    &-button {
+      width: fit-content;
+      padding: 8px 24px;
+      margin: 48px 0 0;
+      background-color: $yellow;
+      border-radius: 8px;
+      color: $purple;
+      font-weight: 600;
+      font-size: 18px;
+      font-family: "Montserrat", sans-serif;
+      box-shadow: 0 5px 8px -2px $black-light;
+      cursor: pointer;
+    }
+  }
+
+  &-step {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 1024px) {
+}

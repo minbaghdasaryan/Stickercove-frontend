@@ -1,0 +1,29 @@
+@import "../../styles/variable.scss";
+
+.faq {
+  width: 100%;
+  padding: 64px 15%;
+  gap: 16px;
+  background-color: $white;
+
+  & > div {
+    border-radius: 16px;
+    background-color: $blue-lighter;
+    padding: 16px;
+    gap: 8px;
+
+    & > div {
+      font-size: 18px;
+
+      & > span {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .faq {
+    padding: 32px 8px;
+  }
+}

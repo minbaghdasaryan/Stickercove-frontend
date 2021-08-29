@@ -1,0 +1,130 @@
+@import "../../styles/variable.scss";
+
+.upload-sticker {
+  width: 100%;
+  height: 100%;
+  padding: 64px 15%;
+  letter-spacing: 2px;
+  font-size: 35px;
+  font-family: pytagoras;
+  justify-content: center;
+  gap: 32px;
+
+  &-upload {
+    gap: 64px;
+
+    &-instruction {
+      width: 100%;
+      align-items: flex-end;
+      justify-content: space-between;
+
+      & > textarea {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid $blue;
+        transition: 0.3s;
+        outline: 0;
+        border-radius: 16px;
+
+        &:hover {
+          box-shadow: 0 0 16px -8px $blue;
+        }
+      }
+    }
+
+    &-choice {
+      width: 100%;
+      font-size: 14px;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &-skip {
+      font-size: 16px;
+      color: $blue;
+      background-color: $white;
+      align-items: center;
+      justify-content: center;
+      height: 64px;
+      width: 240px;
+      cursor: pointer;
+      border-radius: 16px;
+
+      &:hover {
+        background-color: $white-blue;
+      }
+
+      &:active {
+        background-color: $blue-lighter;
+      }
+    }
+
+    &-next {
+      align-items: center;
+      justify-content: center;
+      background-color: $blue;
+      color: $white-dark;
+      font-size: 20px;
+      width: 160px;
+      height: 64px;
+      cursor: pointer;
+      transition: 0.3s;
+      border-radius: 16px;
+      margin: 0 16px 0 0;
+
+      & > svg {
+        margin-left: 16px;
+      }
+
+      &:hover {
+        background-color: $blue-darker;
+        box-shadow: 0 0 16px -8px $blue;
+      }
+
+      &:active {
+        background-color: $blue;
+      }
+    }
+  }
+}
+
+.rotating {
+  animation: rotate 1.2s ease-in-out infinite;
+}
+
+@media (max-width: 1024px) {
+  .upload-sticker {
+    padding: 32px 10%;
+
+    &-upload {
+      gap: 32px;
+      flex-direction: column !important;
+      align-items: center;
+
+      &-instruction {
+        gap: 32px;
+        align-items: center;
+
+        & > textarea {
+          max-width: 480px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .upload-sticker {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .upload-sticker {
+    padding: 16px;
+    &-upload-choice {
+      flex-direction: column !important;
+      gap: 16px;
+    }
+  }
+}

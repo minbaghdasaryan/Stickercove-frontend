@@ -1,0 +1,30 @@
+@import "../../../styles/variable.scss";
+
+.main-process-steps {
+  width: min-content;
+
+  &:not(:last-child) {
+    margin-right: 16px;
+  }
+
+  &-image {
+    height: 150px;
+    align-items: flex-end;
+  }
+
+  &-title {
+    font-weight: lighter;
+    font-size: 18px;
+    font-family: pytagoras;
+    letter-spacing: 2px;
+    margin: 8px 0;
+  }
+
+  &-comments {
+    height: 64px;
+    font-weight: 300;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    padding-right: 64px;
+  }
+}

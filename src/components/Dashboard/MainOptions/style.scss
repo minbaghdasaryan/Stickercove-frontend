@@ -1,0 +1,46 @@
+@import "../../../styles/variable.scss";
+
+.main-options {
+  width: 100%;
+  background-size: cover;
+  background-image: url("../../../resources/images/stickers/main-process-option.png");
+  background-repeat: repeat-y;
+  background-position: center center;
+  padding: 64px 15%;
+  align-items: center;
+
+  & > div {
+    &:not(:last-child) {
+      margin-bottom: 64px;
+    }
+  }
+
+  & > p {
+    letter-spacing: 2px;
+    font-size: 35px;
+    font-weight: lighter;
+    font-family: pytagoras;
+  }
+
+  &-items {
+    & > div {
+      width: 33%;
+    }
+
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &-more {
+    &-button {
+      padding: 8px 24px;
+      background-color: $blue;
+      border-radius: 8px;
+      color: $white;
+      font-size: 16px;
+      font-weight: 700;
+      font-family: "Montserrat", sans-serif;
+      cursor: pointer;
+    }
+  }
+}

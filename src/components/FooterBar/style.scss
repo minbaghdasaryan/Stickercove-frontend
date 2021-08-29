@@ -1,0 +1,18 @@
+@import "../../styles/variable.scss";
+
+.footer-bar {
+  width: 100%;
+  height: 40px;
+  color: $white-darker;
+  background-color: $blue-darker;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+@media (max-width: 768px) {
+  .footer-bar {
+    flex-direction: column !important;
+    height: 72px;
+  }
+}

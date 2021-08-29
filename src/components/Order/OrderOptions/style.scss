@@ -1,0 +1,26 @@
+@import "../../../styles/variable.scss";
+
+.order-options {
+  width: 100%;
+  padding: 64px 15%;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  cursor: pointer;
+
+  & > div {
+    width: 33%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .order-options > div {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .order-options > div {
+    width: 100%;
+  }
+}

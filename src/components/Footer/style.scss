@@ -1,0 +1,158 @@
+@import "../../styles/variable.scss";
+
+.main-footer {
+  width: 100%;
+  padding: 64px 10% 64px 15%;
+  color: $white;
+  background-color: $blue;
+  gap: 96px;
+
+  & > div {
+    & > p {
+      font-size: 14px;
+      font-weight: 400;
+      font-family: muli, sans-serif;
+    }
+
+    & > span {
+      font-size: 18px;
+      font-weight: 900;
+      font-family: muli, sans-serif;
+      margin-bottom: 24px;
+    }
+  }
+
+  &-getapp {
+    position: relative;
+    align-items: center;
+    width: 100%;
+
+    & > img {
+      width: 100%;
+    }
+
+    &-content {
+      width: 100%;
+      position: absolute;
+      padding: 0 calc(15% + 48px);
+      align-items: center;
+      justify-content: space-between;
+
+      & > span {
+        text-align: center;
+        margin-right: 32px;
+        color: $white;
+        font-size: 32px;
+        font-family: pytagoras;
+        text-shadow: 0 1px 4px $black;
+      }
+    }
+
+    &-order {
+      cursor: pointer;
+      white-space: nowrap;
+      width: fit-content;
+      padding: 8px 24px;
+      background-color: $yellow;
+      border-radius: 8px;
+      border: 2px solid $white;
+      font-family: "Montserrat", sans-serif;
+      font-size: 14px;
+      letter-spacing: 1px;
+      font-weight: 700;
+      color: $purple;
+    }
+  }
+
+  &-info {
+    flex: 2;
+    & > img {
+      height: 92px;
+    }
+  }
+
+  &-service {
+    flex: 1;
+    & > a {
+      color: $white;
+      text-decoration: none;
+      padding: 4px 16px;
+    }
+  }
+
+  &-information {
+    flex: 1;
+
+    & > div {
+      font-size: 14px;
+    }
+
+    &-contacts {
+      padding-left: 8px;
+
+      & > div {
+        margin-top: 16px;
+
+        & > span {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .main-footer {
+    gap: 32px;
+
+    &-getapp {
+      & > img {
+        width: 150%;
+      }
+
+      &-content {
+        padding: 0 10%;
+
+        & > span {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .main-footer {
+    flex-direction: column !important;
+
+    &-getapp {
+      & > img {
+        width: 200%;
+      }
+
+      &-content {
+        padding: 0 5%;
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .main-footer {
+    flex-direction: column !important;
+
+    &-getapp {
+      & > img {
+        width: 250%;
+      }
+
+      &-content {
+        padding: 0 6%;
+
+        & > span {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}

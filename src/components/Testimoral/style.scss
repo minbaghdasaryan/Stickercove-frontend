@@ -1,0 +1,50 @@
+@import "../../styles/variable.scss";
+
+.testimoral-item {
+  width: 100%;
+  background-color: $white;
+  padding: 48px;
+
+  &-rating {
+    align-items: center;
+    font-size: 14px;
+
+    & > svg {
+      color: orange;
+      margin-right: 2px;
+
+      &:last-child {
+        margin-right: 16px;
+      }
+    }
+  }
+
+  &-comment {
+    margin: 16px 0 48px;
+    font-weight: 300;
+    font-style: italic;
+  }
+
+  &-customer {
+    align-items: center;
+
+    & > img {
+      margin: 0 16px 0 -8px;
+      border-radius: 50%;
+      width: 48px;
+    }
+
+    &-info {
+      & > div {
+        font-family: "Lato", sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+
+        &:not(:last-child) {
+          font-weight: 600 !important;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

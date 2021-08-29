@@ -1,0 +1,16 @@
+@import "../../../styles/variable.scss";
+
+.order-ad {
+  width: 100%;
+  padding: 64px 15%;
+  align-items: center;
+  justify-content: center;
+  gap: 64px;
+  background-color: $white-blue;
+}
+
+@media (max-width: 768px) {
+  .order-ad {
+    flex-direction: column !important;
+  }
+}
